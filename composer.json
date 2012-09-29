@@ -1,0 +1,42 @@
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "zf/zf1",
+                "version": "1.12.0",
+                "source": {
+                    "url": "http://framework.zend.com/svn/framework/standard/",
+                    "type": "svn",
+                    "reference": "tags/release-1.12.0/library/"
+                },
+                "autoload": {
+                    "psr-0" : {
+			            "Zend_" : "Zend"
+			        }
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "zf/zf1extras",
+                "version": "1.12.0",
+                "source": {
+                    "url": "http://framework.zend.com/svn/framework/standard/",
+                    "type": "svn",
+                    "reference": "tags/release-1.12.0/extras/library/"
+                },
+                "autoload": {
+                    "psr-0" : {
+			            "ZendX_" : "ZendX"
+			        }
+                }
+            }
+        }
+    ],
+    "require": {
+        "zf/zf1": "*",
+        "zf/zf1extras": "*"
+    }
+}
